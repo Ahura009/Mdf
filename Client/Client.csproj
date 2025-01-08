@@ -8,4 +8,23 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Ahura.Platform.Application.Command" Version="1.0.6" />
+	  <PackageReference Include="Ahura.Platform.Application.Query" Version="1.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mdf.Application.Command">
+  <HintPath>..\..\Ahura007\Mdf\src\Application\Command\Mdf.Application.Command\bin\Debug\net8.0\Mdf.Application.Command.dll</HintPath>
+    </Reference>
+    <Reference Include="Mdf.Application.Query">
+      <HintPath>..\..\Ahura007\Mdf\src\Application\Query\Mdf.Application.Query\bin\Debug\net8.0\Mdf.Application.Query.dll</HintPath>
+    </Reference>
+    <Reference Include="Mdf.Core">
+      <HintPath>..\..\Ahura007\Mdf\src\Core\Mdf.Core\bin\Debug\net8.0\Mdf.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
